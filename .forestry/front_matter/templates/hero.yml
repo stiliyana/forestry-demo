@@ -1,4 +1,34 @@
 ---
 label: Hero
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: text_color
+  type: color
+  label: Text Color
+  config:
+    required: false
+    color_format: Hex
+  description: The color of the title
+- name: background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Background Image
+  description: Background image of the hero
+- name: link_to_app_store
+  type: text
+  config:
+    required: false
+  label: Link to App Store
+  description: The URL to the app's app store page
+- name: playstore_link
+  type: text
+  config:
+    required: false
+  label: Playstore Link
+  description: Link to the app's Google Playstore page
