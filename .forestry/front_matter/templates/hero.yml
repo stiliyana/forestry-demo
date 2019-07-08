@@ -32,3 +32,9 @@ fields:
     required: false
   label: Playstore Link
   description: Link to the app's Google Playstore page
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  description: Text that appears under title
