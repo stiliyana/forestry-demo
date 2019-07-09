@@ -2,39 +2,48 @@
 label: Hero d2d
 hide_body: false
 fields:
-- name: title
-  type: text
-  config:
-    required: true
-  label: Title
-- name: text_color
-  type: color
-  label: Text Color
-  config:
-    required: false
-    color_format: Hex
-  description: The color of the title
-- name: background_image
-  type: file
-  config:
-    maxSize: 250
-  label: Background Image
-  description: Background image of the hero
-- name: link_to_app_store
-  type: text
-  config:
-    required: false
-  label: Link to App Store
-  description: The URL to the app's app store page
-- name: playstore_link
-  type: text
-  config:
-    required: false
-  label: Playstore Link
-  description: Link to the app's Google Playstore page
-- name: subtitle
-  type: text
-  config:
-    required: false
-  label: Subtitle
-  description: Text that appears under title
+- name: hero_properties
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: app_store_link
+    type: text
+    config:
+      required: false
+    label: App Store Link
+  - name: playstore_link
+    type: text
+    config:
+      required: false
+    label: Playstore Link
+  - name: background_image
+    type: file
+    config:
+      maxSize: 250
+    label: Background Image
+  - name: text_color
+    type: color
+    label: Text Color
+    config:
+      required: false
+      color_format: Hex
+  - name: background_color
+    type: color
+    label: Background Color
+    config:
+      required: false
+      color_format: Hex
+  - name: download_buttons_enabled
+    type: boolean
+    label: Download Buttons Enabled
+  label: Hero Properties
